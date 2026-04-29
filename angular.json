@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9d25fc67-2af0-4760-ab8c-664e2fd9c5ec"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,6 +34,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@nebular/theme/styles/prebuilt/corporate.css",
               "src/styles.sass"
             ],
             "scripts": []
