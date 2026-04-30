@@ -1,11 +1,83 @@
 <nb-layout>
-  <nb-layout-header fixed>
-    Meu app com Nebular
-  </nb-layout-header>
+  <nb-sidebar tag="contacts" left>
+    <div class="sidebar-contacts">
+      <div class="header-info">
+        <nb-user 
+          size="giant"
+          name="Fulano de Tal" 
+          title="Desenvolvedor Frontend"
+          picture="https://i.pravatar.cc/300"> </nb-user>
+      </div>
+
+      <h3 class="section-title">Informações de contato</h3>
+
+      <div class="contact-links">
+        <nb-action class="contact-item">
+          <nb-icon icon="phone-outline"></nb-icon>
+          <span>(11) 99999-9999</span>
+        </nb-action>
+        <nb-action class="contact-item">
+          <nb-icon icon="instagram-outline"></nb-icon>
+          <span>@fulano</span>
+        </nb-action>
+        <nb-action class="contact-item">
+          <nb-icon icon="github-outline"></nb-icon>
+          <span>github.com/fulano</span>
+        </nb-action>
+        </div>
+    </div>
+  </nb-sidebar>
 
   <nb-layout-column>
-    <button nbButton status="primary">
-      Botão Nebular
-    </button>
+    <div class="portfolio-content">
+      
+      <nb-card>
+        <nb-card-header>Sobre Mim</nb-card-header>
+        <nb-card-body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </nb-card-body>
+      </nb-card>
+
+      <nb-card>
+        <nb-card-header>Minhas competências</nb-card-header>
+        <nb-card-body>
+          <nb-badge status="primary" text="Angular"></nb-badge>
+          <nb-badge status="success" text="Nebular"></nb-badge>
+          <nb-badge status="warning" text="TypeScript"></nb-badge>
+          <nb-badge status="danger" text="Git"></nb-badge>
+          
+          <p style="margin-top: 15px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </nb-card-body>
+      </nb-card>
+
+      <h3 class="section-title-works">Meus trabalhos</h3>
+      
+      <div class="works-grid">
+        <nb-card class="repo-card" status="primary">
+          <nb-card-header>Repositório 1</nb-card-header>
+          <img src="https://i.pravatar.cc/300" alt="Repo 1 Preview" class="repo-image">
+          <nb-card-body>
+            <p>Descrição curta do projeto 1.</p>
+          </nb-card-body>
+          <nb-card-footer>
+            <button nbButton status="primary" size="small">Ver no GitHub</button>
+          </nb-card-footer>
+        </nb-card>
+
+        <nb-card class="repo-card">
+          <nb-card-header>Repositório 2</nb-card-header>
+          <img src="https://i.pravatar.cc/300" alt="Repo 2 Preview" class="repo-image">
+          <nb-card-body>
+            <p>Descrição curta do projeto 2.</p>
+          </nb-card-body>
+          <nb-card-footer>
+            <button nbButton status="primary" size="small">Ver no GitHub</button>
+          </nb-card-footer>
+        </nb-card>
+
+        </div>
+    </div>
   </nb-layout-column>
 </nb-layout>
