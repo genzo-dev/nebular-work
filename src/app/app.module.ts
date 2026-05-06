@@ -20,7 +20,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NbThemeModule.forRoot({ name: 'cosmic' }),
+    NbThemeModule.forRoot({ name: 'default' }), // mudar de cosmic para default para tema claro ou dark para tema escuro
     NbLayoutModule,
     NbButtonModule,
     NbLayoutModule,

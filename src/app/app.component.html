@@ -4,9 +4,9 @@
       <div class="header-info">
         <nb-user 
           size="giant"
-          name="Fulano de Tal" 
-          title="Desenvolvedor Frontend"
-          picture="https://i.pravatar.cc/300"> </nb-user>
+          name="José Rogério" 
+          title="Desenvolvedor Backend"
+          picture="assets/EU.jpg"> </nb-user>
       </div>
 
       <h3 class="section-title">Informações de contato</h3>
@@ -18,13 +18,22 @@
         </nb-action>
         <nb-action class="contact-item">
           <nb-icon icon="instagram-outline"></nb-icon>
-          <span>@fulano</span>
+          <span>@rogerio</span>
         </nb-action>
         <nb-action class="contact-item">
           <nb-icon icon="github-outline"></nb-icon>
-          <span>github.com/fulano</span>
+          <span>github.com/RogerioNeto07</span>
         </nb-action>
-        </div>
+      </div>
+      
+      <div class="theme-switch-container">
+      <p class="theme-title">Trocar Tema</p>
+      <div class="theme-buttons">
+        <button nbButton size="tiny" status="basic" class="btn-tema" (click)="mudarTema('default')">CLARO</button>
+        <button nbButton size="tiny" status="primary" class="btn-tema" (click)="mudarTema('dark')">ESCURO</button>
+        <button nbButton size="tiny" status="info" class="btn-tema" (click)="mudarTema('cosmic')">COSMIC</button>
+      </div>
+    </div>
     </div>
   </nb-sidebar>
 
@@ -34,21 +43,21 @@
       <nb-card>
         <nb-card-header>Sobre Mim</nb-card-header>
         <nb-card-body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          <p>
+            Olá! Sou um desenvolvedor backend com experiência em Python, C++, Java e Javascript.
+          </p>
         </nb-card-body>
       </nb-card>
 
       <nb-card>
         <nb-card-header>Minhas competências</nb-card-header>
         <nb-card-body>
-          <nb-badge status="primary" text="Angular"></nb-badge>
-          <nb-badge status="success" text="Nebular"></nb-badge>
-          <nb-badge status="warning" text="TypeScript"></nb-badge>
-          <nb-badge status="danger" text="Git"></nb-badge>
-          
-          <p style="margin-top: 15px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          <div class="badges-container">
+            <nb-badge status="primary" text="Python"></nb-badge>
+            <nb-badge status="success" text="C++"></nb-badge>
+            <nb-badge status="warning" text="Java"></nb-badge>
+            <nb-badge status="danger" text="Javascript"></nb-badge>
+          </div>
         </nb-card-body>
       </nb-card>
 
@@ -56,28 +65,39 @@
       
       <div class="works-grid">
         <nb-card class="repo-card" status="primary">
-          <nb-card-header>Repositório 1</nb-card-header>
-          <img src="https://i.pravatar.cc/300" alt="Repo 1 Preview" class="repo-image">
+          <nb-card-header>PartiuIF</nb-card-header>
+          <img src="assets/PartiuIF.jpg" alt="PartiuIF Preview" class="repo-image">
           <nb-card-body>
-            <p>Descrição curta do projeto 1.</p>
+            <p>Sistema de cadastro de bolsas</p>
           </nb-card-body>
           <nb-card-footer>
-            <button nbButton status="primary" size="small">Ver no GitHub</button>
+            <a nbButton 
+              status="primary" 
+              size="small" 
+              href="https://github.com/RogerioNeto07" 
+              target="_blank">
+              Ver no GitHub
+            </a>
           </nb-card-footer>
         </nb-card>
 
-        <nb-card class="repo-card">
-          <nb-card-header>Repositório 2</nb-card-header>
-          <img src="https://i.pravatar.cc/300" alt="Repo 2 Preview" class="repo-image">
+        <nb-card class="repo-card" status="success">
+          <nb-card-header>BibliONteca</nb-card-header>
+          <img src="assets/BibliONteca.png" alt="BibliONteca Preview" class="repo-image">
           <nb-card-body>
-            <p>Descrição curta do projeto 2.</p>
+            <p>Sistema de gerenciamento de biblioteca</p>
           </nb-card-body>
           <nb-card-footer>
-            <button nbButton status="primary" size="small">Ver no GitHub</button>
+            <a nbButton 
+              status="primary" 
+              size="small" 
+              href="https://github.com/RogerioNeto07" 
+              target="_blank">
+              Ver no GitHub
+            </a>
           </nb-card-footer>
         </nb-card>
-
-        </div>
+      </div>
     </div>
   </nb-layout-column>
 </nb-layout>
